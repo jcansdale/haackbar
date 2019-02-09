@@ -7,8 +7,11 @@
 {% endfor %}
 {% assign comment_count = comments | size %}
 {% assign author = site.author | upcase %}
-<div id="comments" class="comments">
+
+<div class="post-content">
   <a href="{{ page.comment_url }}#new_comment_field" class="read-more">Comment</a>
+</div>
+<div id="comments" class="comments">
   <h3 class="comment-count">{% if comment_count == 1 %}One response{% else %}{{ comment_count }} responses{% endif %}</h3>
   <ol class="comments-list">
   {% assign sorted_comments = comments | sort: 'date' %}
