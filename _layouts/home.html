@@ -26,11 +26,11 @@ layout: default
             {% endif %}
             {{ post.excerpt }}
             <a href="{{ post.url }}" class="read-more">Read More</a>
-            <a href="{{ post.issue_url }}#new_comment_field" class="read-more">Comment</a>
+            <a href="{{ post.comment_url }}#new_comment_field" class="read-more">Comment</a>
           </div>
         {% else %}
           {{ post.content }}
-          <a href="{{ post.issue_url }}#new_comment_field" class="read-more">Comment</a>
+          <a href="{{ post.comment_url }}#new_comment_field" class="read-more">Comment</a>
         {% endif %}
       </div>
       {% endunless %}
