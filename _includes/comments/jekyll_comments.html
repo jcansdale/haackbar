@@ -8,8 +8,9 @@
 {% assign comment_count = comments | size %}
 {% assign author = site.author | upcase %}
 
+<a href="{{ page.new_comment_url }}" class="new-comment">Leave a comment</a>
+
 <div id="comments" class="comments">
-  <a href="{{ page.new_comment_url }}" class="new-comment">Leave a comment</a>
   <h3 class="comment-count">{% if comment_count == 1 %}One response{% else %}{{ comment_count }} responses{% endif %}</h3>
   <ol class="comments-list">
   {% assign sorted_comments = comments | sort: 'date' %}
