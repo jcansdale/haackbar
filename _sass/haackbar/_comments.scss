@@ -14,21 +14,6 @@ $placeholder-color: #687a86 !default;
     height: 48px;
     width: 48px;
   }
-
-  .new-comment {
-    @include relative-font-size(.8);
-
-    background: none;
-    border: solid 1px $header-background-color;
-    font-family: $base-font-family;
-    padding: 6px 10px;
-    text-transform: uppercase;
-
-    &:hover {
-      background-color: $header-background-color;
-      color: $background-color;
-    }
-  }
 }
 
 .comments-list {
@@ -81,6 +66,21 @@ $placeholder-color: #687a86 !default;
     border-radius: 4px;
   }
 } // .comments-list
+
+.new-comment {
+  @include relative-font-size(.8);
+
+  background: none;
+  border: solid 1px $header-background-color;
+  font-family: $base-font-family;
+  padding: 6px 10px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $header-background-color;
+    color: $background-color;
+  }
+} // .new-comment
 
 .comment-form {
   padding: 8px;
